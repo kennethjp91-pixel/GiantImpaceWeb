@@ -10,9 +10,9 @@ export default function GiantImpactWebsite() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <img
-              src="https://i.ibb.co/LXB6r2N7/Logo-Giant-Impact-Entertainment-1-1.png"
-              alt="Giant Impact Logo"
+            <img 
+              src="https://i.ibb.co/LXB6r2N7/Logo-Giant-Impact-Entertainment-1-1.png" 
+              alt="Giant Impact Logo" 
               className="h-10 w-auto"
             />
             <span className="text-xl font-bold tracking-wide">Giant Impact</span>
@@ -28,13 +28,11 @@ export default function GiantImpactWebsite() {
         </div>
       </header>
 
-      {/* Debug box (optional) */}
-      <div className="mt-24 p-6 bg-purple-600 text-white rounded-xl mx-6 md:mx-20">
-        Tailwind Working
-      </div>
+      <div className="p-6 bg-purple-600 text-white rounded-xl">Tailwind Working</div>
+
 
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-gray-900 to-black">
+             <section className="relative h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-gray-900 to-black">
         <img
           src="https://i.ibb.co/LXB6r2N7/Logo-Giant-Impact-Entertainment-1-1.png"
           alt="Giant Impact Logo"
@@ -48,6 +46,7 @@ export default function GiantImpactWebsite() {
         >
           GIANT IMPACT ENTERTAINMENT
         </motion.h1>
+       
         <p className="mt-4 text-lg md:text-2xl text-gray-300">MUSIC · CULTURE · TALENT</p>
         <div className="mt-8 flex gap-4">
           <Button className="rounded-2xl px-6 py-3 text-lg">Book Studio</Button>
@@ -59,23 +58,20 @@ export default function GiantImpactWebsite() {
       <section className="py-20 px-6 md:px-20 text-center max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-6">About Us</h2>
         <p className="text-gray-300 leading-relaxed">
-          Giant Impact Entertainment is a new-age creative powerhouse in Thailand –
-          blending music, media, and culture into one ecosystem. We empower artists,
-          podcasters, brands, and fans through our six divisions: Studio, Podcast, Academy,
-          Records, Media, and Sessions.
+          Giant Impact Entertainment is a new-age creative powerhouse in Bangkok – blending music, media, and culture into one ecosystem. We empower artists, podcasters, brands, and fans through our six divisions: Studio, Podcast, Academy, Records, Media, and Sessions.
         </p>
       </section>
 
       {/* Divisions */}
       <section className="grid md:grid-cols-3 gap-8 px-6 md:px-20 pb-20">
         {divisions.map((d, i) => (
-          <motion.div
-            key={d.id}
-            id={d.id}
+          <motion.div 
+            key={i}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
+            id={d.id}
           >
             <Card className="bg-gray-900 border-gray-800 rounded-2xl shadow-xl h-full">
               <CardContent className="p-6 flex flex-col items-start">
@@ -98,15 +94,14 @@ export default function GiantImpactWebsite() {
       <section className="bg-gray-950 py-20 px-6 md:px-20 text-center">
         <h2 className="text-4xl font-bold mb-6">Join the Movement</h2>
         <p className="max-w-3xl mx-auto text-gray-400 mb-8">
-          Fans are part of the journey. From exclusive livestreams to VIP access,
-          Giant Impact brings culture closer to you.
+          Fans are part of the journey. From exclusive livestreams to VIP access, Giant Impact brings culture closer to you.
         </p>
         <Button size="lg" className="rounded-2xl px-8 py-4 text-lg">Become a Superfan</Button>
       </section>
 
       {/* Footer */}
       <footer className="bg-black border-t border-gray-800 py-10 text-center text-gray-500 text-sm">
-        <p>📧 info@giantimpact.co</p>
+        <p>📍 Bangkok, Thailand · 📧 info@giantimpact.co</p>
         <p className="mt-2">© 2025 Giant Impact Entertainment</p>
       </footer>
     </div>
