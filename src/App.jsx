@@ -33,26 +33,21 @@ export default function GiantImpactWebsite() {
 
       {/* Hero Section */}
         <section className="relative h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-gray-900 to-black">
-        <img
-          src="https://i.ibb.co/LXB6r2N7/Logo-Giant-Impact-Entertainment-1-1.png"
-          alt="Giant Impact Logo"
-          className="mb-8 w-40 h-40 md:w-56 md:h-56 object-contain mx-auto"
-        />
-        <motion.h1 
-          initial={{ opacity: 0, y: -50 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-extrabold tracking-wide"
-        >
-      <section className="relative h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-gray-900 to-black">
-        <motion.h1 
-          initial={{ opacity: 0, y: -50 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-extrabold tracking-wide"
-        >
-          GIANT IMPACT ENTERTAINMENT
-        </motion.h1>
+  <img
+    src="https://i.ibb.co/LXB6r2N7/Logo-Giant-Impact-Entertainment-1-1.png"
+    alt="Giant Impact Logo"
+    className="mb-8 w-40 h-40 md:w-56 md:h-56 object-contain mx-auto"
+  />
+  <motion.h1 
+    initial={{ opacity: 0, y: -50 }} 
+    animate={{ opacity: 1, y: 0 }} 
+    transition={{ duration: 1 }}
+    className="text-5xl md:text-7xl font-extrabold tracking-wide"
+  >
+    GIANT IMPACT ENTERTAINMENT
+  </motion.h1>
+</section>
+       
         <p className="mt-4 text-lg md:text-2xl text-gray-300">MUSIC · CULTURE · TALENT</p>
         <div className="mt-8 flex gap-4">
           <Button className="rounded-2xl px-6 py-3 text-lg">Book Studio</Button>
