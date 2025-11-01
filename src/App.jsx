@@ -101,7 +101,7 @@ export default function GiantImpactWebsite() {
 
       {/* Footer */}
       <footer className="bg-black border-t border-gray-800 py-10 text-center text-gray-500 text-sm">
-        <p>📍 Bangkok, Thailand · 📧 info@giantimpact.co</p>
+        <p>📍 Bangkok, Thailand · 📧 info@giantimpact.com</p>
         <p className="mt-2">© 2025 Giant Impact Entertainment</p>
       </footer>
     </div>
